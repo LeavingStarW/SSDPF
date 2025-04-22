@@ -1,0 +1,11 @@
+python train.py --ckpt_path= \
+                --name=SP1JSD \
+                --model=SP1JSD \
+                --dataset=lung \
+                --bs=4 \
+                --lr=1e-2 \
+                --lr_decay_step=600000 \
+                --lr_scheduler=cosine_warmup \
+                --epochs=30 \
+                --num_slices=12 \
+                --gpu_ids=3 \
